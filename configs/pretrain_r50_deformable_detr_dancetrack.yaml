@@ -1,4 +1,4 @@
-SUPER_CONFIG_PATH: ./configs/r50_deformable_detr_motip_dancetrack.yaml
+SUPER_CONFIG_PATH: ./configs/r50_deformable_detr_himot_dancetrack.yaml
 
 SAMPLE_LENGTHS: [1, ]   # Only One Frame Detection
 

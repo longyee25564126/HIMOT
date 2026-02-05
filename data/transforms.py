@@ -47,7 +47,7 @@ class MultiSimulate:
             return images, annotations, metas
         else:
             # Currently, we simulate a video clip by shifting the images.
-            # However, as discussed in MOTIP Appendix C.2, we need more advanced methods to simulate a video clip.
+            # However, we need more advanced methods to simulate a video clip.
 
             # Calculate the shift meta infos:
             w, h = images[0].size
@@ -370,7 +370,7 @@ class MultiNormalizeBoundingBoxes:
         return images.contiguous(), annotations, metas
 
 
-# For MOTIP only, biding the ID label:
+# Biding the ID label:
 
 class GenerateIDLabels:
     def __init__(self, num_id_vocabulary: int, aug_num_groups: int, num_training_ids: int):

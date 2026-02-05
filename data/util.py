@@ -68,7 +68,7 @@ def collate_fn(batch):
         nested_tensor.mask, "(b t) h w -> b t h w", b=_B, t=_T
     )
     # Above is prepared for DETR.
-    # Below is prepared for MOTIP, pre-padding the annotations:
+    # Below is prepared for HiMOT, pre-padding the annotations:
     max_N = max(annotation[0]["trajectory_id_labels"].shape[-1] for annotation in annotations)
     # Padding the ID annotations:
     for b in range(len(annotations)):

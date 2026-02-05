@@ -13,7 +13,7 @@ def runtime_option():
     parser = argparse.ArgumentParser("Network training and evaluation script.", add_help=True)
 
     # Config file.
-    parser.add_argument("--config-path", type=str, default="./configs/r50_deformable_detr_motip_dancetrack.yaml")
+    parser.add_argument("--config-path", type=str, default="./configs/r50_deformable_detr_himot_dancetrack.yaml")
     parser.add_argument("--super-config-path", type=str)
 
     # About system.
